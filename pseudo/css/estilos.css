@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.cajaVerde{
+	background-color: chartreuse;
+}
+.cajaVioleta{
+	background-color: violet;
+}
+.cajaAzul{
+	background-color: lightblue;
+}
+.cajaRoja{
+	background-color: red;
+}
+
+/*My first Pseudoclass*/
+
+/*div p:first-child{
+	font-size: 120%;
+	font-weight: bold;
+	border-style:solid;
+
+}*/
+
+div p:last-child{
+	font-size: 120%;
+	font-weight: bold;
+	border-style:solid;
+
+}
+
+/*div p:last-child {
+	font-size: 120%;
+	font-weight: bold
+	}*/
+/*siguiente pseudoclase My firts Pseudoclass*/
+
+a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+a:hover {
+    color:hotpink;
+}   
+
+/*siguiente pseudoclase active*/
+
+button:active {
+  color: red !important; 
+}
+
+/*siguiente pseudoclase anylink*/
+
+a:any-link {
+	border: 1px solid blue;
+  	color: green;
+}
+
+/*siguiente pseudoclase checkbox*/
+
+/* Hide the toggle checkbox */
+#expand-toggle {
+  display: none;
+}
+
+/* Hide expandable content by default */
+.expandable {
+  visibility: collapse;
+  background: #ddd;
+}
+
+/* Style the button */
+#expand-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 11px;
+  background-color: #ff7;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+/* Show hidden content when the checkbox is checked */
+#expand-toggle:checked ~ * .expandable {
+  visibility: visible;
+}
+
+/* Style the button when the checkbox is checked */
+#expand-toggle:checked ~ #expand-btn {
+  background-color: #ccc;
+}
+
